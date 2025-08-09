@@ -1,5 +1,3 @@
-import { loginUser } from '@/app/api';
-import { UserProvider, useUser } from '@/context/UserContext';
 import * as Application from 'expo-application';
 import * as Device from 'expo-device';
 import { Stack } from 'expo-router';
@@ -7,6 +5,8 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import { Platform } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
+import { loginUser } from '../app/api';
+import { UserProvider, useUser } from '../context/UserContext';
 
 const theme = {
   colors: {

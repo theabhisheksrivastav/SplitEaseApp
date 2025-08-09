@@ -1,4 +1,4 @@
-import { Group, Member, Expense } from '@/types';
+import { Expense, Group, Member } from '../types';
 
 export const mockMembers: Member[] = [
   { id: '1', name: 'Alice' },

@@ -1,7 +1,7 @@
-import { Member } from '@/types';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Card, RadioButton, Text } from 'react-native-paper';
+import { Member } from '../types';
 
 interface MemberSelectorProps {
   members: Member[];

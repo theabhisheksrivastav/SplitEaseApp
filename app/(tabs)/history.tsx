@@ -1,10 +1,10 @@
-import { getGroups } from '@/app/api';
-import { useUser } from '@/context/UserContext';
-import { Group } from '@/types';
 import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { Appbar, Card, Text } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getGroups } from '../../app/api';
+import { useUser } from '../../context/UserContext';
+import { Group } from '../../types';
 
 export default function HistoryScreen() {
   const [pastGroups, setPastGroups] = useState<Group[]>([]);

@@ -1,11 +1,11 @@
-import { getGroups, joinGroup } from '@/app/api';
-import { useUser } from '@/context/UserContext';
-import { Group } from '@/types';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Alert, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { Appbar, Button, Card, Text } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getGroups, joinGroup } from '../../app/api';
+import { useUser } from '../../context/UserContext';
+import { Group } from '../../types';
 
 export default function HomeScreen() {
   const [groups, setGroups] = useState<Group[]>([]);

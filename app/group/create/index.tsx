@@ -1,11 +1,11 @@
 // app/group/create/index.tsx
-import { createGroup } from '@/app/api';
-import { useUser } from '@/context/UserContext';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Appbar, Button, Text, TextInput } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { createGroup } from '../../../app/api';
+import { useUser } from '../../../context/UserContext';
 
 export default function CreateGroupScreen() {
   const [groupName, setGroupName] = useState('');

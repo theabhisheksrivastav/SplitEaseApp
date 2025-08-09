@@ -1,11 +1,11 @@
-import { addExpense, getGroupDetails } from '@/app/api';
-import { MemberSelector } from '@/components/MemberSelector';
-import { Group } from '@/types';
 import { router, useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, ScrollView, StyleSheet, View } from 'react-native';
 import { Appbar, Button, Text, TextInput } from 'react-native-paper';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { addExpense, getGroupDetails } from '../../app/api';
+import { MemberSelector } from '../../components/MemberSelector';
+import { Group } from '../../types';
 
 export default function AddExpenseScreen() {
   const { groupId } = useLocalSearchParams();

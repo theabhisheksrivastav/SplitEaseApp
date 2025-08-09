@@ -1,5 +1,3 @@
-import { approveJoin, getGroupDetails } from "@/app/api";
-import { Expense, Group } from "@/types";
 import * as Clipboard from "expo-clipboard";
 import { router, useLocalSearchParams } from "expo-router";
 import { Users } from "lucide-react-native";
@@ -7,6 +5,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator, Alert, ScrollView, StyleSheet, View } from "react-native";
 import { Appbar, Button, Card, Text } from "react-native-paper";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import { approveJoin, getGroupDetails } from "../../app/api";
+import { Expense, Group } from "../../types";
 
 export default function GroupDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
