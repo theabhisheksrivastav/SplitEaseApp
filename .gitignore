@@ -4,6 +4,7 @@
 node_modules/
 
 # Expo
+config.ts
 .expo/
 dist/
 web-build/
